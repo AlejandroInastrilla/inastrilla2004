@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Vista Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Web con Múltiples Vistas</h1>
+        <nav>
+            <button onclick="showView('home')">Inicio</button>
+            <button onclick="showView('about')">Sobre Nosotros</button>
+            <button onclick="showView('contact')">Contacto</button>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="view">
+            <h2>Inicio</h2>
+            <p>Bienvenido a la página de inicio.</p>
+        </div>
+        <div id="about" class="view" style="display: none;">
+            <h2>Sobre Nosotros</h2>
+            <p>Información sobre nosotros.</p>
+        </div>
+        <div id="contact" class="view" style="display: none;">
+            <h2>Contacto</h2>
+            <p>Información de contacto.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Web</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
